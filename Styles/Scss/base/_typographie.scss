@@ -1,0 +1,36 @@
+.title-text-1{
+    font-size: 5rem;
+    font-family: $font-principal;
+}
+
+.title-text-2{
+    font-size: 3rem;
+    font-family: $font-secondaire;
+}
+
+.title-text-3{
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: $font-secondaire;
+    margin-bottom: 1rem;
+}
+
+.text-blanc{
+    color: $couleur-white;
+}
+
+.text-noir{
+    color: $couleur-noir;
+}
+
+.text-rouge{
+    color: $couleur-rouge;
+}
+
+.section__titre{
+    font-size: 5rem;
+    color: $couleur-noir;
+    text-align: center;
+    font-family: $font-principal;
+    font-weight: 300;
+}

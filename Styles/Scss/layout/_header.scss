@@ -1,0 +1,81 @@
+.header{
+    height: 100vh;
+    background-image: url(../../Assets/img/maisons/home-image-1.jpg);
+    background-position: bottom;
+
+        @include responsive(desktop, small){
+            height: 130vh;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+        }
+
+        @include responsive(desktop, medium){
+            height: 132vh;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+        }
+
+    &__logo{
+        width:20rem;
+        margin:5rem;
+    }
+
+    &__box{
+        width:90%;
+
+            @include centrerElement(50%, 50%);
+
+            @include responsive(desktop, medium){
+                @include centrerElement(68%, 50%);
+                grid-template-columns: 1fr;
+                row-gap: 2rem;
+                text-align: center;
+                top: 40%;
+            }
+
+            @include responsive(desktop, small){
+                @include centrerElement(55%, 50%);
+                grid-template-columns: 1fr;
+                row-gap: 2rem;
+                text-align: center;
+                top:35%!important;
+            }
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+    }
+
+    &__form{
+        // justify-self: end;
+        background-color: $couleur-white;
+        width: 40%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 11% 7%;
+        float: right;
+        position: relative;
+
+            @include responsive(desktop, medium){
+                justify-self: center;
+                width: 86%;
+                margin: 45% 7% 0% 7%;
+            }
+
+            @include responsive(desktop, small){
+                justify-self: center;
+                width: -webkit-fill-available;
+                margin-top: 60%;
+            }
+
+            @include responsive(desktop, x-small){
+            margin-top: 85%;
+            }
+    }
+}

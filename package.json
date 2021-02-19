@@ -1,0 +1,15 @@
+{
+  "name": "location-scss",
+  "version": "1.0.0",
+  "description": "projet: apprendre scss",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "node-sass Styles/Scss/main.scss Styles/Css/monstyle.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "jquery":"^3.5.1"
+  }
+}

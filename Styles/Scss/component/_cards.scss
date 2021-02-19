@@ -1,0 +1,21 @@
+.card{
+    text-align: center;
+
+    &__image{
+        width: 100%;
+    }
+
+    &__titre{
+        font-size: 3rem;
+        font-family: $font-principal;
+        color: $couleur-noir;
+        letter-spacing: 0.2rem;
+        font-weight: 300;
+        margin-top: 1.5rem;
+    }
+
+    &__description{
+        font-family: $font-secondaire;
+        font-size: 1.7rem;
+    }
+}

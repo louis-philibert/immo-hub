@@ -1,0 +1,110 @@
+.navbar{
+
+    &__plan{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 20rem;
+        position: fixed;
+        top: 2.5rem;
+        right: 2.5rem;
+        background-color: $couleur-white;
+        z-index: 100;
+        transition: all 0.5s;
+
+        // Sert à afficher la navbar
+        // transform: scale(100);
+    }
+
+    &__boutton{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 20rem;
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        background-color: $couleur-rouge;
+        z-index: 200;
+        transition: all 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+            @include responsive(desktop, medium){
+                background-color: $couleur-orange;
+            }
+    }
+
+    &__nav{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 150;
+        opacity: 0;
+        width: 0;
+        transition: all 1s;
+
+        &:click{
+            display: none;
+        }
+    }
+
+    &__check{
+        display: none;
+    }
+
+    &__list{
+        @include centrerElement(50%, 50%);
+        list-style: none;
+        z-index: 150;
+
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__liens{
+        display: inline-block;
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: 400;
+        color: $couleur-noir;
+        text-transform: uppercase;
+        font-family: $font-principal;
+        padding: 1rem 2rem;
+
+        background-image: linear-gradient(
+            120deg,
+            $couleur-white 0%,
+            $couleur-white 50%,
+            $couleur-rouge 50%,
+        );
+        background-size: 220%;
+        transition: all 0.5s;
+
+            @include responsive(desktop, medium){
+                background-image: linear-gradient(
+                120deg,
+                $couleur-white 0%,
+                $couleur-white 50%,
+                $couleur-orange 50%,
+            )
+            }
+
+        &:hover{
+           background-position: 100%; 
+           color: $couleur-white;
+           transform: translateX(1rem);
+        }
+    }
+
+    &__check:checked ~ &__plan{
+        transform: scale(80);
+    }
+    &__check:checked ~ &__nav{
+        width: 100vw;
+        opacity: 1;
+    }
+}

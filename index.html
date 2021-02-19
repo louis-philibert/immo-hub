@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr" class="translated-ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Loc-scss</title>
+    <link rel="stylesheet" href="Styles/Css/monstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body data-target="navigation" data-spy="scroll"id="body">
+
+    <nav class="navbar">
+        <input type="checkbox" class="navbar__check" id="navbar__check">
+        <label for="navbar__check" class="navbar__boutton">
+            <i class="fa fa-2x fa-stream text-blanc"></i>
+        </label>
+        <div class="navbar__plan"></div>
+        <div class="navbar__nav">
+            <ul class="navbar__list">
+                <li><a href="index.html" class="navbar__liens" target="_parent">Accueille</a></li>
+                <li><a href="#galerie" class="navbar__liens">Gallerie</a></li>
+                <li><a href="#revues" class="navbar__liens">Revues</a></li>
+                <li><a href="#services" class="navbar__liens">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <img class="header__logo" src="Assets/Img/logo-black.png">
+        <div class="header__box">
+            <div>
+                <h2 class="title-text-1 text-blanc">Louer un appartement chez nous</h2>
+                <p class="title-text-2 text-blanc">Situé en centre-ville</p>
+                <a href="#" class="button button-blanc mt-court">Louer</a>
+            </div>
+        </div>
+        <form class="header__form">
+            <h2 class="title-text-3">Louer un appartement ici</h2>
+            <input type="date" placeholder="jj/mm/aa" class="input">
+            <input type="email" placeholder="Votre email :" class="input">
+            <input type="text" placeholder="Nom :" class="input">
+            <input type="text" placeholder="Prénom" class="input">
+            <input type="phone" placeholder="Téléphone :" class="input">
+            <button class="button button-rouge mt-court">Réservez maintenant</button>
+        </form>
+    </header>
+
+    <section class="fonctionnalites">
+        <div class="card">
+            <img class="card__image" src="Assets/img/maisons/card1.jpg">
+            <h3 class="card__titre">Une belle décoration intérieure</h3>
+            <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quam, incidunt mollitia rerum obcaecati recusandae blanditiis ducimus nam, quo inventore voluptatibus. Laborum quod incidunt, sit beatae ratione natus quas nam.</p>
+            <a href="#" class="button button-rouge mt-court">Réservez</a>
+        </div>
+        <div class="card">
+            <img class="card__image" src="Assets/img/maisons/card2.jpg">
+            <h3 class="card__titre">A seulement 50m du métro</h3>
+            <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quam, incidunt mollitia rerum obcaecati recusandae blanditiis ducimus nam, quo inventore voluptatibus. Laborum quod incidunt, sit beatae ratione natus quas nam.</p>
+            <a href="#" class="button button-rouge mt-court">Réservez</a>
+        </div>
+        <div class="card">
+            <img class="card__image" src="Assets/img/maisons/card3.jpg">
+            <h3 class="card__titre">Une situation centrale parfaite</h3>
+            <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quam, incidunt mollitia rerum obcaecati recusandae blanditiis ducimus nam, quo inventore voluptatibus. Laborum quod incidunt, sit beatae ratione natus quas nam.</p>
+            <a href="#" class="button button-rouge mt-court">Réservez</a>
+        </div>
+    </section>
+
+    <section class="galerie" id="galerie">
+        <h2 class="section__titre">Consultez notre galeries</h2>
+        <div class="galerie__conteneur mt-moyen">
+            <img src="Assets/img/maisons/image1.jpg" class="galerie__image">
+            <img src="Assets/img/maisons/image2.jpg" class="galerie__image">
+            <img src="Assets/img/maisons/image3.jpg" class="galerie__image">
+            <img src="Assets/img/maisons/card2.jpg" class="galerie__image">
+            <img src="Assets/img/maisons/card1.jpg" class="galerie__image">
+            <img src="Assets/img/maisons/card3.jpg" class="galerie__image">
+        </div>
+    </section>
+
+    <section class="revues" id="revues"> 
+        <h2 class="section__titre">Location Revues</h2>
+        <div class="mt-court">
+            <a class="button button-blanc">Ecrire une revue</a>
+            <a class="button button-rouge">Lire sur LOC</a>
+        </div>
+        <div class="revues__container">
+            <div class="revue">
+                <img src="Assets/img/avatars/avatar-2.jpg" class="revue__image">
+                <h3 cass="revue__titre">Un hôte fantastique !</h3>
+                <div>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                </div>
+                <p class="revue__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem repellat fuga in reiciendis magnam, tempore fugiat. Magnam delectus laborum quod ad! Dolorum nam consectetur iusto ex voluptas veniam placeat.
+                </p>
+                <p class="revue__auteur">John Doe</p>
+            </div>
+            <div class="revue">
+                <img src="Assets/img/avatars/avatar-3.jpg" class="revue__image">
+                <h3 cass="revue__titre">Des vacances parfaits</h3>
+                <div>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star"></i>
+                </div>
+                <p class="revue__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem repellat fuga in reiciendis magnam, tempore fugiat. Magnam delectus laborum quod ad! Dolorum nam consectetur iusto ex voluptas veniam placeat.
+                </p>
+                <p class="revue__auteur">John Doe</p>
+            </div>
+            <div class="revue">
+                <img src="Assets/img/avatars/avatar-1.jpg" class="revue__image">
+                <h3 cass="revue__titre">Nous avons adoré cet endroit</h3>
+                <div>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                </div>
+                <p class="revue__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem repellat fuga in reiciendis magnam, tempore fugiat. Magnam delectus laborum quod ad! Dolorum nam consectetur iusto ex voluptas veniam placeat.
+                </p>
+                <p class="revue__auteur">John Doe</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="services__text">
+            <h3 class="services__titre">Expeience unique en vidéo</h3>
+            <p class="services__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, cum reiciendis. Architecto dolor eveniet nostrum et illum id, tempora vero repudiandae libero ducimus deleniti culpa eligendi voluptatibus doloribus iure aliquam.</p>
+            <img src="Assets/img/maisons/image2.jpg" class="services__image">
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Appartement</th>
+                    <th>Disponibilités</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Toute la maison</td>
+                    <td><i class="fa fa-check text-rouge"></i></td>
+                </tr>
+                <tr>
+                    <td>Cuisine</td>
+                    <td><i class="fa fa-check text-rouge"></i></td>
+                </tr>
+                <tr>
+                    <td>WIFI</td>
+                    <td><i class="fa fa-check text-rouge"></i></td>
+                </tr>
+                <tr>
+                    <td>Balcon</td>
+                    <td><i class="fa fa-times"></i></td>
+                </tr>
+                <tr>
+                    <td>Climatiseur</td>
+                    <td><i class="fa fa-check text-rouge"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="sociales">
+        <h3 class="sociales__titre">Retrouvez moi sur : </h3>
+        <div class="sociales__list">
+            <a href="#" class="sociales__liens"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="sociales__liens"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="sociales__liens"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="sociales__liens"><i class="fab fa-snapchat"></i></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img class="footer__logo" src="Assets/img/logo-white.png">
+        <a href="#" class="footer__copyright">&copy; Louis-Philibert Huet</a>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+.revue{
+    background-color: $couleur-white;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-rows: repeat(5, min-content);
+    row-gap:2rem;
+    justify-content: center;
+
+        @include responsive(desktop, x-small){
+            width: 75%;
+            margin: auto;
+        }
+
+    &__titre{
+        font-size: 2rem;
+        font-family: $font-principal;
+        font-weight: 300;
+        color: $couleur-noir;
+    }
+
+    &__description{
+        font-family: $font-secondaire;
+        font-size: 1.6rem;
+        color:$couleur-noir;
+    }
+
+    &__auteur{
+        font-size: 1.8rem;
+        font-style: italic;
+        font-family: $font-principal;
+    }
+
+    &__image{
+        width:12rem;
+        border-radius: 10rem;
+        justify-self: center;
+    }
+}

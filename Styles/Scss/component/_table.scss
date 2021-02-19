@@ -1,0 +1,24 @@
+.table{
+    height: 100%;
+    width: 100%;
+    background-color: $couleur-white;
+    padding: 2rem;
+    color: $couleur-noir;
+
+    tr{
+        &:nth-child(even){
+            background-color: $couleur-grise;
+        }
+    }
+
+    th{
+        font-size: 1.7rem;
+        font-family: $font-principal;
+        padding: 2rem 0;
+    }
+
+    td{
+        font-size: 1.5rem;
+        padding: 0 2rem;
+    }
+}

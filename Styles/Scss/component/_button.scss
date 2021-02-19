@@ -1,0 +1,40 @@
+%button{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+
+.button{
+    @extend %button;
+}
+
+.button-blanc{
+    background-color: $couleur-white;
+    color: $couleur-noir;
+
+    &:hover{
+        background-color: $couleur-rouge;
+        color: $couleur-white;
+    }
+}
+
+.button-rouge{
+    background-color: $couleur-rouge;
+    color: $couleur-white;
+
+    &:hover{
+        background-color: $couleur-white;
+        color: $couleur-noir;
+        border: 3px solid $couleur-rouge;
+    }
+}
+
+.button-orange{
+    background-color: $couleur-orange;
+    color: $couleur-white;
+}
